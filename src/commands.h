@@ -1,0 +1,46 @@
+// LightView: a PDF and DjVu viewer. Copyright (C) 2026 Kalachev Gleb.
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+#pragma once
+
+namespace lv {
+
+enum Cmd : int {
+  CMD_NONE = 0,
+  CMD_OPEN = 100,
+  CMD_PRINT,
+  CMD_RELOAD,
+  CMD_CLOSE,
+  CMD_SHOW_IN_FOLDER,
+  CMD_TOC,
+  CMD_PREV_PAGE,
+  CMD_NEXT_PAGE,
+  CMD_FIRST_PAGE,
+  CMD_LAST_PAGE,
+  CMD_GOTO_PAGE,
+  CMD_BACK,
+  CMD_FORWARD,
+  CMD_ZOOM_IN,
+  CMD_ZOOM_OUT,
+  CMD_FIT_WIDTH,
+  CMD_FIT_PAGE,
+  CMD_ACTUAL_SIZE,
+  CMD_ROTATE_LEFT,
+  CMD_ROTATE_RIGHT,
+  CMD_FACING,
+  CMD_INVERT,
+  CMD_CRISP_TEXT,
+  CMD_FULLSCREEN,
+  CMD_FIND,
+  CMD_FIND_NEXT,
+  CMD_FIND_PREV,
+  CMD_COPY,
+  CMD_SELECT_ALL,
+  CMD_HELP,
+  CMD_REGISTER,
+  CMD_ESCAPE,
+  CMD_RECENT_FIRST = 1000,
+  CMD_RECENT_LAST = 1019,
+};
+
+}  // namespace lv
